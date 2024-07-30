@@ -1,3 +1,3 @@
-# 3mor
+# 3mór
 
 Coming soon!
