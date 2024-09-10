@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Next Wave, Second Wave, it's still ... DevOps to me"
 author: Beth Fuller
 ---

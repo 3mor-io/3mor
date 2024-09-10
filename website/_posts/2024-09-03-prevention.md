@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Prevention: It's time to save those millions"
 author: Beth Fuller
 ---
