@@ -1,0 +1,23 @@
+{% include header.html %}
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  {% include nav_content.html %}
+</nav>
+<div class="main">
+  <section
+    class="module bg-dark-60 blog-page-header"
+    data-background="assets/images/blog_bg.jpg"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">{{ page.title }}</h2>
+          <div class="module-subtitle font-serif">{{ page.description }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="module">
+    <div class="container">{{ content }}</div>
+  </section>
+  {% include footer.html %}
+</div>
