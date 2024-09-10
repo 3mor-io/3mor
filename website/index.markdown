@@ -5,20 +5,30 @@
 layout: home
 ---
 
-Sign up for updates:
+<div class="row">
+  <div class="callout-text font-alt">
+  <div class="col-sm-6 col-sm-offset-3">
+    <h2 class="module-title font-alt">Sign up for updates</h2>
+  </div>  
+  </div>
+</div>
 
-<form
-  action="https://buttondown.email/api/emails/embed-subscribe/3mor"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/3mor', 'popupwindow')"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Enter your email&nbsp;</label>
-  <input type="email" name="email" id="bd-email" />
-  
-  <input type="submit" value="Subscribe" />
-  <p>
-    <a href="https://buttondown.email/refer/3mor" target="_blank">Powered by Buttondown.</a>
-  </p>
-</form>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/3mor"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/3mor', 'popupwindow')"
+      class="embeddable-buttondown-form"
+    >
+      <div class="form-group">
+        <label for="bd-email">Email</label>
+        <input type="email" name="email" id="bd-email" class="form-control" />
+      </div>
+      <div class="callout-btn-box">
+        <input type="submit" value="Subscribe" />
+      </div>
+    </form>
+  </div>
+</div>

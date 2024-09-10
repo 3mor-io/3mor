@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Prevention: It's time to save those millions"
+title: "Prevention: It's time to save those millions"
+excerpt: "At 3Mór, we’re addressing a specific gap or chasm—the missing slice of data that keeps Security and DevOps teams in conflict. It’s not about Shifting Left; it’s about being Better Together. Shifting Left can be contentious. It requires numerous tools and scaffolding for a smooth transition. We believe there’s a better way."
 author: Beth Fuller
 ---
 

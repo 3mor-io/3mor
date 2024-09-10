@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Next Wave, Second Wave, it's still ... DevOps to me"
+title: "Next Wave, Second Wave, it's still ... DevOps to me"
+excerpt: "The Next Wave of DevOps companies I’ve identified over the past two years are going to be critical in avoiding major outages in the future. Their tools are adjusting, recalibrating, and reimagining how we do work."
 author: Beth Fuller
 ---
 
