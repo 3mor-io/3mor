@@ -28,7 +28,6 @@ url: "3mor.io" # the base hostname & protocol for your site, e.g. http://example
 # github_username:  capybarawave
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
