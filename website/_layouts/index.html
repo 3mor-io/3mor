@@ -1,0 +1,135 @@
+{% include header.html %}
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+          {% include nav_content.html %}
+      </nav>
+      <section class="home-section bg-dark bg-gradient" id="home">
+        <div id="particles-js" class="titan-caption">
+          <div class="caption-content" style="z-index: 5;">
+            <div class="font-alt mb-40 titan-title-size-4">We are 3Mór</div>
+            <div class="font-alt mb-30 titan-title-size-1">Empower your team to innovate fearlessly with 3Mór. We uncover hidden risks and seamlessly bridge Security and DevOps, protecting your code, infrastructure, and incidents to keep your business running smoothly and securely.</div>
+            <div class="font-alt mb-80">&nbsp;</div>
+
+            <a class="section-scroll btn btn-border-w btn-round" href="#blog" >Learn More</a>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+          <section class="module-extra-small bg-dark">
+            <div class="container">
+              <div class="row">
+                <form id="contactForm" role="form" action="https://buttondown.email/api/emails/embed-subscribe/3mor" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/3mor', 'popupwindow')">
+                <div class="col-sm-6 col-md-8 col-lg-9">
+                  <div class="callout-text font-alt">
+                    <h4 style="margin-top: 0px; font-;">Sign up for Updates</h4>
+                    <div class="form-group">
+                        <label class="sr-only" for="bd-email">Enter your email&nbsp;</label>
+                        <input class="form-control" type="email" id="bd-email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="callout-btn-box"><h4 style="margin-top: 0px; font-;">&nbsp;</h4><a class="btn btn-w btn-round" id="cfsubmit" type="submit">Subscribe</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- Blog -->
+        <section class="module" id="blog">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Latest blog posts</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row multi-columns-row post-columns">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.png" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Next Wave, Second Wave, it's still ... DevOps to me</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Beth Fuller</a>&nbsp;| 15 August
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>Seems like some of the dust has settled around Crowdstrike. I’ve been really pleased with the content talking about better preventative
+                    steps and guardrails related to their Root Cause Analysis. The Next Wave of DevOps companies I’ve identified over the past two years are going
+                    to be critical in avoiding these kinds of outages in the future. Their tools are adjusting, recalibrating, and reimagining how we do work.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.png" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Prevention: It's time to save those millions</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Beth Fuller</a>&nbsp;| 3 September
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>What data do both teams need to communicate and appropriately prioritize work? The time is now for a single tool with Security data formatted
+                    for DevOps teams to assess risk. We’re calling it Context Driven Prioritization Management (CDPM). It allows teams to mitigate unplanned work,
+                    reduce future risk, and respond more efficiently when a zero-day vulnerability emerges.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <!-- For 3rd Blog post entry
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Coming Soon</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+            -->
+            </div>
+          </div>
+        </section>
+        <!-- Contact Us -->
+        <!--
+        <section class="module" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Get in touch</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <form id="contactForm" role="form" method="post" action="mailto:info@3mor.io">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      -->
+{% include footer.html %}
