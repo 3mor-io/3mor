@@ -23,7 +23,7 @@ title: 3Mór
 description: >- # this means to ignore newlines until "baseurl:"
   Empower your team to innovate fearlessly
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "3mor.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://3mor.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  capybarawave
 
