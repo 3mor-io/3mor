@@ -2,4 +2,102 @@
 layout: default
 ---
 
-{{ content }}
+<div class="main">
+    <section class="module-small">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="post">
+              <div class="post-thumbnail"><img src="{{ page.image }}" /></div>
+              <div class="post-header font-alt">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <div class="post-meta">By&nbsp;<a href="#">{{ page.author }}</a>| {{ page.date | date: "%-d %B %Y" }}
+                </div>
+              </div>
+              <div class="post-entry">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
+            <div class="widget">
+              <h5 class="widget-title font-alt">Recent Posts</h5>
+              <ul class="widget-posts">
+                <li class="clearfix">
+                  <!-- <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div> -->
+                  <div class="widget-posts-body">
+                    <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                    <div class="widget-posts-meta">23 january</div>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <!-- <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div> -->
+                  <div class="widget-posts-body">
+                    <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                    <div class="widget-posts-meta">15 February</div>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <!-- <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-3.jpg" alt="Post Thumbnail"/></a></div> -->
+                  <div class="widget-posts-body">
+                    <div class="widget-posts-title"><a href="#">Eco bag Mockup</a></div>
+                    <div class="widget-posts-meta">21 February</div>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <!-- <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-4.jpg" alt="Post Thumbnail"/></a></div> -->
+                  <div class="widget-posts-body">
+                    <div class="widget-posts-title"><a href="#">Bottle Mockup</a></div>
+                    <div class="widget-posts-meta">2 March</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="module-small bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="widget">
+              <h5 class="widget-title font-alt">About 3Mór</h5>
+              <p>Empower your team to innovate fearlessly with 3Mór. We uncover hidden risks and seamlessly bridge Security and DevOps, protecting your code, infrastructure, and incidents to keep your business running smoothly and securely.</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="widget">
+              <h5 class="widget-title font-alt">Recent Posts</h5>
+              <ul class="widget-posts">
+                <li class="clearfix">
+                  <!-- <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div> -->
+                  <div class="widget-posts-body">
+                    <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                    <div class="widget-posts-meta">23 january</div>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <!-- <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div> -->
+                  <div class="widget-posts-body">
+                    <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                    <div class="widget-posts-meta">15 February</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider-d">
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="copyright font-alt">&copy; {{ site.time | date: "%Y" }}&nbsp;<a href="index.html">3Mór</a>, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
