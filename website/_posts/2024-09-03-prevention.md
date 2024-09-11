@@ -4,7 +4,7 @@ title: "Prevention: It's time to save those millions"
 excerpt: "At 3Mór, we’re addressing a specific gap or chasm—the missing slice of data that keeps Security and DevOps teams in conflict. It’s not about Shifting Left; it’s about being Better Together. Shifting Left can be contentious. It requires numerous tools and scaffolding for a smooth transition. We believe there’s a better way."
 author: Beth Fuller
 image: /assets/images/conference-room.png
-thumbnail: 
+thumb: /assets/images/thumbs/conference-room.png
 ---
 
 I started watching the series *New Amsterdam*. Initially, I thought it might be inspirational. It’s about a public hospital in NYC. If you haven’t watched it and plan to, I won’t spoil anything. I just started season 2, and the inspiration is flowing. The series takes a more socially conscious approach to problems.
