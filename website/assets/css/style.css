@@ -9,7 +9,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 14px/1.8 "Open Sans", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
@@ -1062,6 +1062,7 @@ Hero Slider
 .hero-slider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .hero-slider,
@@ -1748,6 +1749,7 @@ Google map
   left: 50%;
   height: 14px;
   width: 14px;
+  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1763,6 +1765,7 @@ Google map
   left: 50%;
   height: 16px;
   width: 16px;
+  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -2165,7 +2168,7 @@ Google map
 }
 
 .post-meta {
-  font-size: 11px;
+  font-size: 13px;
   color: #aaa;
 }
 
