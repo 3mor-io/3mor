@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="main">
+    <section
+      class="module bg-dark-60 blog-page-header"
+      data-background="/assets/images/background.jpg"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2 class="module-title font-alt">Posts</h2>
+            <div class="module-subtitle font-serif">
+                Empower your team to innovate fearlessly
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="module">
+      <div class="container">
+        <div class="row multi-columns-row post-columns">
+          {% for post in site.posts %}
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            {% include post_snippet.html thumb=post.thumb title=post.title author=post.author date=post.date excerpt=post.excerpt link=post.url %}
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Add pagination back when we need it -->
+        <!-- <div class="pagination font-alt">
+          <a href="#"><i class="fa fa-angle-left"></i></a
+          ><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a
+          ><a href="#">4</a><a href="#"><i class="fa fa-angle-right"></i></a>
+        </div> -->
+      </div>
+    </section>
+    {% include footer.html %}
+  </div>

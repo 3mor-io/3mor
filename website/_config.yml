@@ -21,14 +21,13 @@
 title: 3Mór
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Bringing internal discovery to the masses 😉
+  Empower your team to innovate fearlessly
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "3mor.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  capybarawave
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 

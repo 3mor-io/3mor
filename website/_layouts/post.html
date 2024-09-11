@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="main">
+    <section class="module-small">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="post">
+              <div class="post-thumbnail"><img src="{{ page.image }}" /></div>
+              <div class="post-header font-alt">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <div class="post-meta">By&nbsp;<a href="#">{{ page.author }}</a> | {{ page.date | date: "%-d %B %Y" }}
+                </div>
+              </div>
+              <div class="post-entry">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
+            <div class="widget">
+              <h5 class="widget-title font-alt">Recent Posts</h5>
+              <ul class="widget-posts">
+                {% for post in site.posts %}
+                {% include post_snippet_widget.html thumb=post.thumb title=post.title date=post.date link=post.url %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="module-small bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="widget">
+              <h5 class="widget-title font-alt">About 3Mór</h5>
+              <p>Empower your team to innovate fearlessly with 3Mór. We uncover hidden risks and seamlessly bridge Security and DevOps, protecting your code, infrastructure, and incidents to keep your business running smoothly and securely.</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="widget">
+              <h5 class="widget-title font-alt">Recent Posts</h5>
+              <ul class="widget-posts">
+                {% for post in site.posts limit: 2%}
+                {% include post_snippet_footer.html thumb=post.thumb title=post.title date=post.date link=post.url %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider-d">
+    {% include footer.html %}
+</div>

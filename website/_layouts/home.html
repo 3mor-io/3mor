@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<section class="home-section bg-dark bg-gradient" data-background="/assets/images/background.jpg" id="home">
+    <div class="titan-caption">
+        <div class="caption-content">
+            <div class="font-alt mb-40 titan-title-size-4">We are 3Mór</div>
+            <div class="font-alt mb-30 titan-title-size-1">Empower your team to innovate fearlessly with 3Mór. <br/>We uncover hidden risks and seamlessly bridge Security and DevOps, <br/>protecting your code, infrastructure, and incidents 
+            <br/>to keep your business running smoothly and securely.</div>
+            <a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+        </div>
+    </div>
+</section>
+<div class="main">
+    <section class="module" id="about">
+        <div class="container">
+        {{ content }}
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-5">
+              <div class="large-text align-center"><a class="section-scroll" href="#posts"><i class="fa fa-angle-down"></i></a></div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <hr class="divider-w">
+    <section class="module" id="posts">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">Latest post</h2>
+            </div>
+          </div>
+          <div class="row">
+            {% for post in site.posts limit:1 %}
+            <div class="col-sm-6 col-sm-offset-3">
+                <h3 class="features-title font-alt">{{ post.title }}</h3>
+                <p>{{ post.excerpt }}</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="{{ post.url }}">Read more</a></div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+      {% include footer.html %}
+</div>
