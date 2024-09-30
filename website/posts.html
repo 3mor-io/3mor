@@ -2,33 +2,35 @@
 layout: default
 ---
 
-    <section class="module bg-dark-60 blog-page-header">
-      <div id="particles-js" class="container">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <h2 class="module-title font-alt">Posts</h2>
-            <div class="module-subtitle font-serif">&nbsp;</div>
-          </div>
-        </div>
+<section class="module bg-dark-60 blog-page-header">
+  <div id="particles-js" class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2 class="module-title font-alt">Blog Posts</h2>
+        <div class="module-subtitle font-serif">&nbsp;</div>
       </div>
-    </section>
-  <div class="main">
-    <section class="module">
-      <div class="container">
-        <div class="row multi-columns-row post-columns">
-          {% for post in site.posts %}
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            {% include post_snippet.html thumb=post.thumb title=post.title author=post.author date=post.date excerpt=post.excerpt link=post.url %}
-          </div>
-          {% endfor %}
+    </div>
+  </div>
+</section>
+<div class="main">
+  <section class="module">
+    <div class="container">
+      <div class="row multi-columns-row post-columns">
+        {% for post in site.posts %}
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          {% include post_snippet.html thumb=post.thumb title=post.title
+          author=post.author date=post.date excerpt=post.excerpt link=post.url
+          %}
         </div>
-        <!-- Add pagination back when we need it -->
-        <!-- <div class="pagination font-alt">
+        {% endfor %}
+      </div>
+      <!-- Add pagination back when we need it -->
+      <!-- <div class="pagination font-alt">
           <a href="#"><i class="fa fa-angle-left"></i></a
           ><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a
           ><a href="#">4</a><a href="#"><i class="fa fa-angle-right"></i></a>
         </div> -->
-      </div>
-    </section>
-    {% include footer.html %}
-  </div>
+    </div>
+  </section>
+  {% include footer.html %}
+</div>
