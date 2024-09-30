@@ -5,6 +5,7 @@ excerpt: "At 3Mór, we’re addressing a specific gap or chasm—the missing sli
 author: Beth Fuller
 image: /assets/images/conference-room.png
 thumb: /assets/images/thumbs/conference-room.png
+tags: prevention
 ---
 
 I started watching the series *New Amsterdam*. Initially, I thought it might be inspirational. It’s about a public hospital in NYC. If you haven’t watched it and plan to, I won’t spoil anything. I just started season 2, and the inspiration is flowing. The series takes a more socially conscious approach to problems.
