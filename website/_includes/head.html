@@ -52,4 +52,8 @@
     <!-- Main stylesheet and color file-->
     <link href="/assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="/assets/css/colors/default.css" rel="stylesheet">
+    <!-- Analytics -->
+    {% if jekyll.environment == "production" %}
+      {% include analytics.html %}
+    {% endif %}
   </head>
