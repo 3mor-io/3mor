@@ -10,6 +10,10 @@
       {{ content }}
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
-    {% include scripts.html %}
+    {% if layout.noparticles %}
+      {% include scripts.html %}
+    {% else %}
+      {% include scripts.html particles="true" %}
+    {% endif %}
   </body>
 </html>

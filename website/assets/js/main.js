@@ -14,8 +14,8 @@ console.log(
 
   $(document).ready(function () {
     /* ---------------------------------------------- /*
-         * WOW Animation When You Scroll
-        /* ---------------------------------------------- */
+     * WOW Animation When You Scroll
+    /* ---------------------------------------------- */
 
     wow = new WOW({
       mobile: false,
@@ -23,8 +23,8 @@ console.log(
     wow.init();
 
     /* ---------------------------------------------- /*
-         * Scroll top
-         /* ---------------------------------------------- */
+     * Scroll top
+    /* ---------------------------------------------- */
 
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
@@ -40,8 +40,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Initialization General Scripts for all pages
-         /* ---------------------------------------------- */
+     * Initialization General Scripts for all pages
+    /* ---------------------------------------------- */
 
     var homeSection = $(".home-section"),
       navbar = $(".navbar-custom"),
@@ -75,8 +75,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Set sections backgrounds
-         /* ---------------------------------------------- */
+     * Set sections backgrounds
+    /* ---------------------------------------------- */
 
     var module = $(".home-section, .module, .module-small, .side-image");
     module.each(function (i) {
@@ -89,8 +89,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Home section height
-         /* ---------------------------------------------- */
+     * Home section height
+    /* ---------------------------------------------- */
 
     function buildHomeSection(homeSection) {
       if (homeSection.length > 0) {
@@ -103,8 +103,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Home section effects
-         /* ---------------------------------------------- */
+     * Home section effects
+    /* ---------------------------------------------- */
 
     function effectsHomeSection(homeSection, scrollTopp) {
       if (homeSection.length > 0) {
@@ -127,8 +127,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Intro slider setup
-         /* ---------------------------------------------- */
+     * Intro slider setup
+    /* ---------------------------------------------- */
 
     if ($(".hero-slider").length > 0) {
       $(".hero-slider").flexslider({
@@ -160,8 +160,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Rotate
-         /* ---------------------------------------------- */
+     * Rotate
+    /* ---------------------------------------------- */
 
     $(".rotate").textrotator({
       animation: "dissolve",
@@ -170,8 +170,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Transparent navbar animation
-         /* ---------------------------------------------- */
+     * Transparent navbar animation
+    /* ---------------------------------------------- */
 
     function navbarAnimation(navbar, homeSection, navHeight) {
       var topScroll = $(window).scrollTop();
@@ -185,8 +185,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Navbar submenu
-         /* ---------------------------------------------- */
+     * Navbar submenu
+    /* ---------------------------------------------- */
 
     function navbarSubmenu(width) {
       if (width > 767) {
@@ -211,8 +211,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Navbar hover dropdown on desctop
-         /* ---------------------------------------------- */
+     * Navbar hover dropdown on desctop
+    /* ---------------------------------------------- */
 
     function hoverDropdown(width, mobileTest) {
       if (width > 767 && mobileTest !== true) {
@@ -260,8 +260,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Navbar collapse on click
-         /* ---------------------------------------------- */
+     * Navbar collapse on click
+    /* ---------------------------------------------- */
 
     $(document).on("click", ".navbar-collapse.in", function (e) {
       if (
@@ -273,8 +273,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Video popup, Gallery
-         /* ---------------------------------------------- */
+     * Video popup, Gallery
+    /* ---------------------------------------------- */
 
     $(".video-pop-up").magnificPopup({
       type: "iframe",
@@ -295,8 +295,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Portfolio
-         /* ---------------------------------------------- */
+     * Portfolio
+    /* ---------------------------------------------- */
 
     var worksgrid = $("#works-grid"),
       worksgrid_mode;
@@ -332,8 +332,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Testimonials
-         /* ---------------------------------------------- */
+     * Testimonials
+    /* ---------------------------------------------- */
 
     if ($(".testimonials-slider").length > 0) {
       $(".testimonials-slider").flexslider({
@@ -343,8 +343,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Post Slider
-         /* ---------------------------------------------- */
+     * Post Slider
+    /* ---------------------------------------------- */
 
     if ($(".post-images-slider").length > 0) {
       $(".post-images-slider").flexslider({
@@ -354,8 +354,8 @@ console.log(
     }
 
     /* ---------------------------------------------- /*
-         * Progress bar animations
-         /* ---------------------------------------------- */
+     * Progress bar animations
+    /* ---------------------------------------------- */
 
     $(".progress-bar").each(function (i) {
       $(this).appear(function () {
@@ -369,21 +369,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Funfact Count-up
-         /* ---------------------------------------------- */
-
-    $(".count-item").each(function (i) {
-      $(this).appear(function () {
-        var number = $(this).find(".count-to").data("countto");
-        $(this)
-          .find(".count-to")
-          .countTo({ from: 0, to: number, speed: 1200, refreshInterval: 30 });
-      });
-    });
-
-    /* ---------------------------------------------- /*
-         * Youtube video background
-         /* ---------------------------------------------- */
+     * Youtube video background
+    /* ---------------------------------------------- */
 
     $(function () {
       $(".video-player").mb_YTPlayer();
@@ -412,64 +399,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Owl Carousel
-         /* ---------------------------------------------- */
-
-    $(".owl-carousel").each(function (i) {
-      // Check items number
-      if ($(this).data("items") > 0) {
-        items = $(this).data("items");
-      } else {
-        items = 4;
-      }
-
-      // Check pagination true/false
-      if (
-        $(this).data("pagination") > 0 &&
-        $(this).data("pagination") === true
-      ) {
-        pagination = true;
-      } else {
-        pagination = false;
-      }
-
-      // Check navigation true/false
-      if (
-        $(this).data("navigation") > 0 &&
-        $(this).data("navigation") === true
-      ) {
-        navigation = true;
-      } else {
-        navigation = false;
-      }
-
-      // Build carousel
-      $(this).owlCarousel({
-        navText: [
-          '<i class="fa fa-angle-left"></i>',
-          '<i class="fa fa-angle-right"></i>',
-        ],
-        nav: navigation,
-        dots: pagination,
-        loop: true,
-        dotsSpeed: 400,
-        items: items,
-        navSpeed: 300,
-        autoplay: 2000,
-      });
-    });
-
-    /* ---------------------------------------------- /*
-         * Blog masonry
-         /* ---------------------------------------------- */
-
-    $(".post-masonry").imagesLoaded(function () {
-      $(".post-masonry").masonry();
-    });
-
-    /* ---------------------------------------------- /*
-         * Scroll Animation
-         /* ---------------------------------------------- */
+     * Scroll Animation
+    /* ---------------------------------------------- */
 
     $(".section-scroll").bind("click", function (e) {
       var anchor = $(this);
@@ -484,9 +415,9 @@ console.log(
       e.preventDefault();
     });
 
-    /*===============================================================
-         Working Contact Form
-         ================================================================*/
+    /* ---------------------------------------------- /*
+     * Working Contact Form
+    /* ---------------------------------------------- */
 
     $("#contactForm").submit(function (e) {
       e.preventDefault();
@@ -512,78 +443,7 @@ console.log(
           $("#contactForm textarea[name=message]").val("");
         },
         error: function (data) {
-          alert("Error occurd! Please try again");
-        },
-      });
-
-      return false;
-    });
-
-    /*===============================================================
-         Working Request A Call Form
-         ================================================================*/
-
-    $("#requestACall").submit(function (e) {
-      e.preventDefault();
-      var $ = jQuery;
-
-      var postData = $(this).serializeArray(),
-        formURL = $(this).attr("action"),
-        $cfResponse = $("#requestFormResponse"),
-        $cfsubmit = $("#racSubmit"),
-        cfsubmitText = $cfsubmit.text();
-
-      $cfsubmit.text("Sending...");
-
-      $.ajax({
-        url: formURL,
-        type: "POST",
-        data: postData,
-        success: function (data) {
-          $cfResponse.html(data);
-          $cfsubmit.text(cfsubmitText);
-          $("#requestACall input[name=name]").val("");
-          $("#requestACall input[name=subject]").val("");
-          $("#requestACall textarea[name=phone]").val("");
-        },
-        error: function (data) {
-          alert("Error occurd! Please try again");
-        },
-      });
-
-      return false;
-    });
-
-    /*===============================================================
-         Working Reservation Form
-         ================================================================*/
-
-    $("#reservationForm").submit(function (e) {
-      e.preventDefault();
-      var $ = jQuery;
-
-      var postData = $(this).serializeArray(),
-        formURL = $(this).attr("action"),
-        $cfResponse = $("#reservationFormResponse"),
-        $cfsubmit = $("#rfsubmit"),
-        cfsubmitText = $cfsubmit.text();
-
-      $cfsubmit.text("Sending...");
-
-      $.ajax({
-        url: formURL,
-        type: "POST",
-        data: postData,
-        success: function (data) {
-          $cfResponse.html(data);
-          $cfsubmit.text(cfsubmitText);
-          $("#reservationForm input[name=date]").val("");
-          $("#reservationForm input[name=time]").val("");
-          $("#reservationForm textarea[name=people]").val("");
-          $("#reservationForm textarea[name=email]").val("");
-        },
-        error: function (data) {
-          alert("Error occurd! Please try again");
+          alert("Error occurred! Please try again");
         },
       });
 
@@ -591,8 +451,8 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-         * Subscribe form ajax
-         /* ---------------------------------------------- */
+     * Subscribe form - Buttondown
+    /* ---------------------------------------------- */
 
     $("#subscription-form").submit(function (e) {
       e.preventDefault();
@@ -600,13 +460,19 @@ console.log(
       var submit = $("#subscription-form-submit");
       var ajaxResponse = $("#subscription-response");
       var email = $("input#semail").val();
+      var name = $("input#sname").val();
+      var nameParts = name.trim().split(/\s+/);
+      var fName = nameParts[0];
+      var lName = nameParts.length > 1 ? nameParts.slice(1).join(" ") : "";
 
       $.ajax({
         type: "POST",
-        url: "assets/php/subscribe.php",
-        dataType: "json",
+        url: "https://buttondown.com/api/emails/embed-subscribe/3mor",
         data: {
           email: email,
+          metadata__name: name,
+          metadata__first_name: fName,
+          metadata__last_name: lName,
         },
         cache: false,
         beforeSend: function (result) {
@@ -614,264 +480,18 @@ console.log(
           submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
         },
         success: function (result) {
-          if (result.sendstatus == 1) {
-            ajaxResponse.html(result.message);
+          var titleContent = result.match(/<title>(.*?)<\/title>/)[1];
+          if (titleContent.startsWith("Subscribed to")) {
+            ajaxResponse.html(
+              "Thank you for subscribing!<br />Buttondown will send you an email to confirm your address. Click it and you&#x27;re in!",
+            );
             $form.fadeOut(500);
           } else {
-            ajaxResponse.html(result.message);
+            ajaxResponse.html("Sorry, there was an error. Please try again.");
+            $form[0].reset(); // Reset the form on error
           }
         },
       });
     });
-
-    /* ---------------------------------------------- /*
-         * Google Map
-         /* ---------------------------------------------- */
-
-    if ($("#map").length == 0 || typeof google == "undefined") return;
-
-    // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, "load", init);
-
-    var mkr = new google.maps.LatLng(40.67, -74.2);
-    var cntr = mobileTest ? mkr : new google.maps.LatLng(40.67, -73.94);
-
-    function init() {
-      // Basic options for a simple Google Map
-      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-      var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 11,
-        scrollwheel: false,
-        // The latitude and longitude to center the map (always required)
-        center: cntr, // New York
-
-        // How you would like to style the map.
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [
-          {
-            featureType: "all",
-            elementType: "geometry.fill",
-            stylers: [
-              {
-                visibility: "on",
-              },
-              {
-                saturation: "-11",
-              },
-            ],
-          },
-          {
-            featureType: "administrative",
-            elementType: "geometry.fill",
-            stylers: [
-              {
-                saturation: "22",
-              },
-            ],
-          },
-          {
-            featureType: "administrative",
-            elementType: "geometry.stroke",
-            stylers: [
-              {
-                saturation: "-58",
-              },
-              {
-                color: "#cfcece",
-              },
-            ],
-          },
-          {
-            featureType: "administrative",
-            elementType: "labels.text",
-            stylers: [
-              {
-                color: "#f8f8f8",
-              },
-            ],
-          },
-          {
-            featureType: "administrative",
-            elementType: "labels.text.fill",
-            stylers: [
-              {
-                color: "#999999",
-              },
-              {
-                visibility: "on",
-              },
-            ],
-          },
-          {
-            featureType: "administrative",
-            elementType: "labels.text.stroke",
-            stylers: [
-              {
-                visibility: "on",
-              },
-            ],
-          },
-          {
-            featureType: "administrative.country",
-            elementType: "geometry.fill",
-            stylers: [
-              {
-                color: "#f9f9f9",
-              },
-              {
-                visibility: "simplified",
-              },
-            ],
-          },
-          {
-            featureType: "landscape",
-            elementType: "all",
-            stylers: [
-              {
-                color: "#f2f2f2",
-              },
-            ],
-          },
-          {
-            featureType: "landscape",
-            elementType: "geometry",
-            stylers: [
-              {
-                saturation: "-19",
-              },
-              {
-                lightness: "-2",
-              },
-              {
-                visibility: "on",
-              },
-            ],
-          },
-          {
-            featureType: "poi",
-            elementType: "all",
-            stylers: [
-              {
-                visibility: "off",
-              },
-            ],
-          },
-          {
-            featureType: "road",
-            elementType: "all",
-            stylers: [
-              {
-                saturation: -100,
-              },
-              {
-                lightness: 45,
-              },
-            ],
-          },
-          {
-            featureType: "road.highway",
-            elementType: "all",
-            stylers: [
-              {
-                visibility: "simplified",
-              },
-            ],
-          },
-          {
-            featureType: "road.arterial",
-            elementType: "labels.icon",
-            stylers: [
-              {
-                visibility: "off",
-              },
-            ],
-          },
-          {
-            featureType: "transit",
-            elementType: "all",
-            stylers: [
-              {
-                visibility: "off",
-              },
-            ],
-          },
-          {
-            featureType: "water",
-            elementType: "all",
-            stylers: [
-              {
-                color: "#d8e1e5",
-              },
-              {
-                visibility: "on",
-              },
-            ],
-          },
-          {
-            featureType: "water",
-            elementType: "geometry.fill",
-            stylers: [
-              {
-                color: "#dedede",
-              },
-            ],
-          },
-          {
-            featureType: "water",
-            elementType: "labels.text",
-            stylers: [
-              {
-                color: "#cbcbcb",
-              },
-            ],
-          },
-          {
-            featureType: "water",
-            elementType: "labels.text.fill",
-            stylers: [
-              {
-                color: "#9c9c9c",
-              },
-            ],
-          },
-          {
-            featureType: "water",
-            elementType: "labels.text.stroke",
-            stylers: [
-              {
-                visibility: "off",
-              },
-            ],
-          },
-        ],
-      };
-
-      // Get the HTML DOM element that will contain your map
-      // We are using a div with id="map" seen below in the <body>
-      var mapElement = document.getElementById("map");
-
-      // Create the Google Map using our element and options defined above
-      var map = new google.maps.Map(mapElement, mapOptions);
-
-      // Let's also add a marker while we're at it
-      var image = new google.maps.MarkerImage(
-        "assets/images/map-icon.png",
-        new google.maps.Size(59, 65),
-        new google.maps.Point(0, 0),
-        new google.maps.Point(24, 42),
-      );
-
-      var marker = new google.maps.Marker({
-        position: mkr,
-        icon: image,
-        title: "Titan",
-        infoWindow: {
-          content:
-            "<p><strong>Rival</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>",
-        },
-        map: map,
-      });
-    }
   });
 })(jQuery);
