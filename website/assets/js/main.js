@@ -451,7 +451,7 @@ console.log(
     });
 
     /* ---------------------------------------------- /*
-     * Subscribe form - ajax
+     * Subscribe form - Buttondown
     /* ---------------------------------------------- */
 
     $("#subscription-form").submit(function (e) {
@@ -460,13 +460,19 @@ console.log(
       var submit = $("#subscription-form-submit");
       var ajaxResponse = $("#subscription-response");
       var email = $("input#semail").val();
+      var name = $("input#sname").val();
+      var nameParts = name.trim().split(/\s+/);
+      var fName = nameParts[0];
+      var lName = nameParts.length > 1 ? nameParts.slice(1).join(" ") : "";
 
       $.ajax({
         type: "POST",
-        url: "assets/php/subscribe.php",
-        dataType: "json",
+        url: "https://buttondown.com/api/emails/embed-subscribe/3mor",
         data: {
           email: email,
+          metadata__name: name,
+          metadata__first_name: fName,
+          metadata__last_name: lName,
         },
         cache: false,
         beforeSend: function (result) {
@@ -474,11 +480,15 @@ console.log(
           submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
         },
         success: function (result) {
-          if (result.sendstatus == 1) {
-            ajaxResponse.html(result.message);
+          var titleContent = result.match(/<title>(.*?)<\/title>/)[1];
+          if (titleContent.startsWith("Subscribed to")) {
+            ajaxResponse.html(
+              "Thank you for subscribing!<br />Buttondown will send you an email to confirm your address. Click it and you&#x27;re in!",
+            );
             $form.fadeOut(500);
           } else {
-            ajaxResponse.html(result.message);
+            ajaxResponse.html("Sorry, there was an error. Please try again.");
+            $form[0].reset(); // Reset the form on error
           }
         },
       });
