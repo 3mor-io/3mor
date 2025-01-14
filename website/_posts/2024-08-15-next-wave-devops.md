@@ -5,7 +5,7 @@ excerpt: "The Next Wave of DevOps companies I’ve identified over the past two 
 author: Beth Fuller
 image: /assets/images/women-at-conference-table.png
 thumb: /assets/images/thumbs/women-at-conference-table.png
-tags: nextwave
+tags: nextwave ops devops sre opservations
 ---
 
 Seems like some of the dust has settled around Crowdstrike. I’ve been really pleased with the content talking about better preventative steps and guardrails related to their [Root Cause Analysis](https://www.crowdstrike.com/wp-content/uploads/2024/08/Channel-File-291-Incident-Root-Cause-Analysis-08.06.2024.pdf). The Next Wave of DevOps companies I’ve identified over the past two years are going to be critical in avoiding these kinds of outages in the future. Their tools are adjusting, recalibrating, and reimagining how we do work. 
