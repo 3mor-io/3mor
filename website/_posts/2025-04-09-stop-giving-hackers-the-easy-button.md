@@ -3,7 +3,7 @@ layout: post
 title: "Stop giving hackers the easy button"
 excerpt: "Vulnerability management is like tending a garden. When I weed my strawberry patch, I’m rewarded with strawberries in early summer. But weeding isn’t enough."
 author: Beth Fuller
-image: /assets/images/winding-road.png
+image: /assets/images/winding-road.jpg
 thumb: /assets/images/thumbs/winding-road.png
 tags: devops security observation 
 ---
