@@ -3,7 +3,7 @@ layout: post
 title: "Let's get messy"
 excerpt: "I want to take a moment to shout out to all the people who are not working with all the latest tech. You know, like at most companies."
 author: Beth Fuller
-image: /assets/images/class-car.png
+image: /assets/images/classic-car.png
 thumb: /assets/images/thumbs/classic-car.png
 tags: devops security observation 
 ---

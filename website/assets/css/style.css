@@ -42,6 +42,19 @@ iframe {
     left: auto !important;
 }
 
+.padding-0 {
+  padding: 0 !important;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.row-15 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 /* Transition elsements */
 a,
 .btn {
@@ -1150,29 +1163,8 @@ Hero Slider
     text-align: center;
 }
 
-/*
-Photography Page Slider
-*/
-.photography-page .image-caption {
-    bottom: 20px;
-    position: absolute;
-    width: 35%;
-}
-
-.photography-page .image-caption .caption-text {
-    font-size: 24px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
-.photography-page .flex-control-nav {
-    left: 80%;
-    bottom: 20px;
-    z-index: 11;
-}
-
 /* -------------------------------------------------------------------
-General Styles - Owlcarousel
+   General Styles - Owlcarousel
 ------------------------------------------------------------------- */
 .owl-controls {
     margin-top: 40px;
@@ -1400,6 +1392,7 @@ General Styles - Owlcarousel
 	color: #999;
 	margin-top: -20px;
 }*/
+
 /*--------------------------------------------------------------
 	Header
 --------------------------------------------------------------*/
@@ -2212,7 +2205,7 @@ Google map
 }
 
 .post-header {
-    margin: 0 0 15px;
+    margin: 20px 0 15px;
 }
 
 .post-meta {
@@ -2234,7 +2227,10 @@ Google map
     bottom: 0;
 }
 
-.post-thumbnail,
+.post-thumbnail {
+  margin: 0 0 0;
+}
+
 .post-images-slider,
 .post-video {
     margin: 0 0 20px;
