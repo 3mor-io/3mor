@@ -1,17 +1,47 @@
-<nav class="navbar navbar-custom navbar-fixed-top {{ nav }}" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="{{ site.url }}">3Mór</a>
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-content">
+      <!-- Logo -->
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          {% include bird.html %}
+          <div class="logo-dot"></div>
+        </div>
+        <span class="logo-text">3Mór</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="/posts" class="nav-link">Blog</a>
+
+        <a href="services.html" class="btn btn-ghost">Work with us</a>
       </div>
-      <div class="collapse navbar-collapse" id="custom-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site.url }}">Home</a></li>
-          <li><a href="{{ site.baseurl }}/#features">Features</a></li>
-          <li><a href="{{ site.baseurl }}/#how-it-works">How It Works</a></li>
-          <li><a href="{{ site.baseurl }}/#pricing">Pricing</a></li>
-          <li><a href="{{ site.baseurl }}/posts">Blog</a></li>
-          <li><a href="{{ site.baseurl }}/about">About</a></li>
-        </ul>
+
+      <!-- Mobile menu button -->
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-content">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="/posts" class="mobile-nav-link">Blog</a>
+
+        <a href="services.html" class="btn btn-ghost mobile-cta">Work with us</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
