@@ -603,6 +603,37 @@ body {
   }
 }
 
+/* Posts */
+.posts-content {
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 80%
+}
+
+.posts-content h2 {
+  color: hsl(var(--muted-foreground));
+  font-weight: 300;
+}
+
+.posts-content a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+
+.post-snippet-entry {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.post-meta {
+  font-weight: 200;
+}
+
+.post-snippet-title a:hover {
+  color: hsl(var(--accent));
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid hsl(var(--border));
@@ -624,7 +655,7 @@ body {
 
 .footer a {
   text-decoration: inherit;
-  color: inherit
+  color: inherit;
 }
 
 .footer-logo {

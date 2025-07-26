@@ -1,19 +1,16 @@
-<div class="post">
-    <!-- <div class="post-thumbnail">
+<div class="post-snippet">
+  <!-- <div class="post-thumbnail">
       <a href="{{ include.link }}"><img src="{{ include.thumb }}" /></a>
     </div> -->
-    <div class="post-header font-alt">
-      <h2 class="post-title"><a href="{{ include.link }}">{{ include.title }}</a></h2>
-      <div class="post-meta">
-        By&nbsp;<a href="#">{{ include.author }}</a>&nbsp;| {{ include.date | date: "%-d %B %Y" }}
-      </div>
-    </div>
-    <div class="post-entry">
-      <p>
-        {{ include.excerpt }}
-      </p>
-    </div>
-    <div class="post-more">
-      <a class="more-link" href="{{ include.link }}">Read more</a>
+  <div class="post-snippet-header">
+    <h2 class="post-snippet-title"><a href="{{ include.link }}">{{ include.title }}</a></h2>
+    <div class="post-meta">
+      by&nbsp;<a href="#">{{ include.author }}</a>&nbsp;| {{ include.date | date: "%-d %B %Y" }}
     </div>
   </div>
+  <div class="post-snippet-entry">
+    <p>
+      {{ include.excerpt }}
+    </p>
+  </div>
+</div>
