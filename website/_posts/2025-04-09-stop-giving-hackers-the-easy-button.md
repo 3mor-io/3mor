@@ -8,8 +8,6 @@ thumb: /assets/images/thumbs/winding-road.png
 tags: devops security observation 
 ---
 
-## Stop giving hackers the easy button 
-
 I’ve been tracking the [Salt Typhoon attack](https://www.reuters.com/technology/cybersecurity/chinese-salt-typhoon-cyberespionage-targets-att-networks-secure-carrier-says-2024-12-29/) off and on. In part that’s because I’m a customer of one of the telecom companies impacted. Also in part because I’ve been seeing an uptick in attacks that use Advanced Persistent Threat (APT) methodology. After digging in a little and learning about more APT attacks that are impacting our infrastructure, I wanted to understand what I can do. 
 
 The quick explanation of an APT is they find a way in via a known Common Vulnerability and Exploit (CVE) and start to traverse through the stack until they get to the information they want. As they traverse, they cover their tracks so they can hang out. It’s like a woodboring beetle. Here is a link to a [technical description from Crowdstrike](https://www.crowdstrike.com/en-us/cybersecurity-101/threat-intelligence/advanced-persistent-threat-apt/). The attackers are patient and have a specific goal in mind. Whether it’s an infrastructure attack like with [Volt Typhon](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/) or [Silk Typhoon](https://www.microsoft.com/en-us/security/blog/2025/03/05/silk-typhoon-targeting-it-supply-chain/) targeting IT supply chains.

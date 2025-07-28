@@ -8,8 +8,6 @@ thumb: /assets/images/thumbs/chess.png
 tags: ai aiops devops security
 ---
 
-# How Many AI Tokens to Play a Game of Chess?
-
 > Just because AI tokens are cheap today doesn’t mean they’ll stay that way.
 
 When cloud adoption peaked around 2015, everyone migrated to “save money.” But many teams didn’t fully understand their on-prem costs, nor did they have a realistic plan for managing spend once they migrated. It’s as though we forgot about all our best practices.*  
