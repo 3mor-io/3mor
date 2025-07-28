@@ -3,7 +3,7 @@ layout: default
 ---
 <!-- Main Content -->
 <main>
-  <!-- Hero Section -->
+  <!-- Title Section -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -14,12 +14,19 @@ layout: default
           Whether you're navigating AI tools for the first time or an experienced software engineer, 3Mór offers
           consulting, workshops, and coaching to aid your journey.
         </p>
-        <div class="hero-actions">
-          <a href="services.html" class="btn btn-primary btn-lg">Explore Services</a>
-          <a href="about.html" class="btn btn-secondary btn-lg">Learn More</a>
-        </div>
       </div>
-    </div>
+      <div class="hero-actions">
+        <form action="https://buttondown.com/api/emails/embed-subscribe/3mor" method="post" target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/3mor', 'popupwindow')" class="embeddable-buttondown-form">
+          <label for="bd-email">Sign up to learn more</label>
+          <input type="email" name="email" id="bd-email" class="text-field" placeholder="Name" />
+          <input type="text" name="metadata__name" id="name" class="text-field" placeholder="Email" />
+          <input type="submit" value="Subscribe" class="btn btn-secondary" />
+          <p>
+            <a href="https://buttondown.com/refer/3mor" target="_blank">Powered by Buttondown.</a>
+          </p>
+        </form>
+      </div>
   </section>
 
   <!-- Services Preview -->
@@ -29,49 +36,40 @@ layout: default
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <rect width="18" height="18" x="3" y="4" rx="2" />
-              <path d="M3 10h18" />
-            </svg>
+            {% include icon-users.html %}
           </div>
           <h3 class="service-title">Workshops</h3>
           <p class="service-description">
-            Interactive learning sessions designed to give you hands-on experience with AI tools and frameworks.
+            Learn prompting, tool selection, and how to transform ideas into reality.
           </p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="m9 12 2 2 4-4" />
-              <path
-                d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 1 0-8.953 8.953c.55-.055.998-.398.998-.95 0-.551-.449-1.004-.998-.95a8 8 0 1 1 7.953-7.953c-.055-.551-.398-.998-.95-.998" />
-            </svg>
+            {% include icon-zap.html %}
           </div>
           <h3 class="service-title">Coaching</h3>
           <p class="service-description">
-            Personalized guidance to help you navigate your AI learning journey and achieve your specific goals.
+            Personal guidance to build your vision, troubleshoot challenges, and develop mastery with AI development
+            tools.
           </p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6" />
-              <polyline points="8 6 2 12 8 18" />
-            </svg>
+            {% include icon-braces.html %}
           </div>
           <h3 class="service-title">Development</h3>
           <p class="service-description">
-            Custom AI solutions and integrations tailored to your business needs and technical requirements.
+            We can transform your AI-built prototype into a finished application that's ready to deploy.
           </p>
         </div>
       </div>
+    </div>
+
+    <div class="services-actions">
+      <a href="/services" class="btn btn-primary btn-lg">Explore Services</a>
+      <a href="/about" class="btn btn-secondary btn-lg">Learn More</a>
     </div>
   </section>
 </main>
