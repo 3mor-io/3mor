@@ -620,7 +620,6 @@ body {
   color: inherit;
 }
 
-
 .post-snippet-entry {
   margin-bottom: 1rem;
   text-align: justify;
@@ -628,10 +627,74 @@ body {
 
 .post-meta {
   font-weight: 200;
+  padding-bottom: 3px;
 }
 
 .post-snippet-title a:hover {
   color: hsl(var(--accent));
+}
+
+.page-body {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.page-body .post-meta {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+.page-body .post-meta a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.post-image {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+
+article.post-entry h2 {
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
+
+article.post-entry a {
+  text-decoration: inherit;
+  color: hsl(var(--muted-foreground));
+}
+
+article.post-entry a:hover {
+  color: hsl(var(--accent));
+}
+
+article.post-entry p {
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+
+article.post-entry ul {
+  list-style-position: inside;
+  padding: 0.25rem 0 0.5rem 0;
+}
+
+article.post-entry ol {
+  list-style-position: inside;
+  padding: 0.25rem 0 0.5rem 0;
+}
+
+article.post-entry table th, td {
+  padding: 0.25rem 1rem 0.25rem 0;
+}
+
+section.post-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+section.post-footer a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 /* Footer */

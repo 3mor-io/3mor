@@ -5,7 +5,6 @@ excerpt: "I’ve had a few people ask how to say our company name 3Mór. But rea
 author: Beth Fuller
 image: /assets/images/wolves.png
 thumb: /assets/images/thumbs/wolves.png
-permalink: /about/
 tags: about devops security observation observability
 ---
 

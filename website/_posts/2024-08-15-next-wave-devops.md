@@ -39,4 +39,4 @@ If you aren’t already following some of these companies I encourage you to do 
 * [RunWhen](https://www.runwhen.com/)  
 * [Stanza](https://www.stanza.systems/)
 
-Photo courtesy of WOC in Tech
+Photo courtesy of [WOC in Tech](https://www.flickr.com/photos/wocintechchat/)

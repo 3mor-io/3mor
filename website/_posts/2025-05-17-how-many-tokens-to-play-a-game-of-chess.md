@@ -91,11 +91,7 @@ Educate your teams. Create internal best practices. Monitor usage.
 
 Just like we learned in the cloud migration, **getting efficient early pays off in scale, security, and speed**.
 
----
-
-### ***🔗 Further Reading***
+## ***🔗 Further Reading***
 
 * [*AI Tokens Explained: Complete Guide to Usage, Optimization, & Cost Management*](https://guptadeepak.com/complete-guide-to-ai-tokens-understanding-optimization-and-cost-management/)  
 * [*OpenAI Tokenizer Tool*](https://platform.openai.com/tokenizer)
-
-If this helped, drop a 🐦‍⬛ in the comments or share your own best practice for managing AI usage at scale.
