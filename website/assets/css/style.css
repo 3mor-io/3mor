@@ -614,6 +614,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.about-description strong {
+  font-weight: 400;
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: 1fr;
