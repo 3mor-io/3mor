@@ -24,5 +24,16 @@ layout: default
     {% if page.previous %}<a href="{{ page.previous.url }}">⬅&nbsp;&nbsp;Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;/{% endif
     %}
     {% if page.next %}/&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ page.next.url }}">Next&nbsp;&nbsp;➡</a>{% endif %}
+
+    <div class="workshop-subscribe pt-8">
+      <form action="https://buttondown.com/api/emails/embed-subscribe/3mor" method="post" target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/3mor?tag=workshop-interest', 'popupwindow')"
+        class="embeddable-buttondown-form">
+        <label for="bd-email">Stay up to date on all the latest resources from 3Mór</label>
+        <input type="email" name="email" id="bd-email" class="text-field" placeholder="Name" />
+        <input type="text" name="metadata__name" id="name" class="text-field" placeholder="Email" />
+        <input type="submit" value="Subscribe" class="btn btn-secondary" />
+      </form>
+    </div>
   </section>
 </main>
