@@ -1,92 +1,212 @@
 ---
-layout: default
+layout: page
 permalink: /services
 ---
+
 <main>
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Our Services</h1>
-            <p class="page-description">
-                Comprehensive AI consulting solutions designed to accelerate your journey into artificial intelligence.
-            </p>
-        </div>
-    </section>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Services</h1>
+      <p class="page-description">
+        Choose the perfect path for your AI journey. From foundational workshops to personalized coaching and
+        full development assistance.</p>
+    </div>
+  </section>
 
-    <section class="services-detail">
-        <div class="container">
-            <div class="services-grid-detail">
-                <div class="service-card-detail">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M8 2v4" />
-                                <path d="M16 2v4" />
-                                <rect width="18" height="18" x="3" y="4" rx="2" />
-                                <path d="M3 10h18" />
-                            </svg>
-                        </div>
-                        <h2 class="service-title">AI Workshops</h2>
-                    </div>
-                    <p class="service-description">
-                        Interactive learning sessions that provide hands-on experience with cutting-edge AI tools and
-                        frameworks. Perfect for teams looking to upskill quickly.
-                    </p>
-                    <ul class="service-features">
-                        <li>Hands-on coding sessions</li>
-                        <li>Real-world project examples</li>
-                        <li>Custom curriculum design</li>
-                        <li>Team collaboration exercises</li>
-                    </ul>
-                </div>
+  <!-- Workshops section -->
+  <section class="services-detail">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-medium text-foreground mb-6">AI Workshops</h2>
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          Two specialized AI intro workshops to give you a solid foundation on writing prompts, choosing
+          tools, and getting from ideas to finished results.
+        </p>
+      </div>
 
-                <div class="service-card-detail">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m9 12 2 2 4-4" />
-                                <path
-                                    d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 1 0-8.953 8.953c.55-.055.998-.398.998-.95 0-.551-.449-1.004-.998-.95a8 8 0 1 1 7.953-7.953c-.055-.551-.398-.998-.95-.998" />
-                            </svg>
-                        </div>
-                        <h2 class="service-title">Personal Coaching</h2>
-                    </div>
-                    <p class="service-description">
-                        One-on-one mentorship tailored to your specific goals and learning pace. Get personalized
-                        guidance on your AI journey.
-                    </p>
-                    <ul class="service-features">
-                        <li>Personalized learning paths</li>
-                        <li>Regular progress reviews</li>
-                        <li>Industry insights and trends</li>
-                        <li>Career guidance and planning</li>
-                    </ul>
-                </div>
-
-                <div class="service-card-detail">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6" />
-                                <polyline points="8 6 2 12 8 18" />
-                            </svg>
-                        </div>
-                        <h2 class="service-title">AI Development</h2>
-                    </div>
-                    <p class="service-description">
-                        Custom AI solutions and integrations built specifically for your business needs and technical
-                        requirements.
-                    </p>
-                    <ul class="service-features">
-                        <li>Custom AI model development</li>
-                        <li>API integrations</li>
-                        <li>Performance optimization</li>
-                        <li>Ongoing support and maintenance</li>
-                    </ul>
-                </div>
+      <div class="services-detail-grid">
+        <div class="service-card-detail">
+          <div class="service-header">
+            <div class="service-icon">
+              {% include icon-house.html %}
             </div>
+            <h3 class="service-title">AI Builders</h2>
+          </div>
+
+          <p class="service-description">
+            Level up your AI app & website projects ✨
+          </p>
+
+          <ul class="service-features">
+            <li>
+              Learn to write effective prompts for app development
+            </li>
+            <li>
+              Master AI tools for website and app creation
+            </li>
+            <li>
+              Transform ideas into working prototypes
+            </li>
+            <li>
+              Best practices for AI-assisted design and development
+            </li>
+          </ul>
         </div>
-    </section>
+
+        <div class="service-card-detail">
+          <div class="service-header">
+            <div class="service-icon">
+              {% include icon-wrench.html %}
+            </div>
+            <h3 class="service-title">Programmers</h2>
+          </div>
+
+          <p class="service-description">
+            Learn how to make AI code tools work for you 🙌
+          </p>
+
+          <ul class="service-features">
+            <li>
+              Master AI coding assistants and tools
+            </li>
+            <li>
+              Write prompts that generate quality code
+            </li>
+            <li>
+              Integrate AI into your development workflow
+            </li>
+            <li>
+              Debug and optimize AI-generated code
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workshop-subscribe">
+        <form action="https://buttondown.com/api/emails/embed-subscribe/3mor" method="post" target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/3mor?tag=workshop-interest', 'popupwindow')"
+          class="embeddable-buttondown-form">
+          <label for="bd-email">Sign up to hear when our next round of workshops open up</label>
+          <input type="email" name="email" id="bd-email" class="text-field" placeholder="Name" />
+          <input type="text" name="metadata__name" id="name" class="text-field" placeholder="Email" />
+          <input type="submit" value="Subscribe" class="btn btn-secondary" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaching section -->
+  <section class="services-detail">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-medium text-foreground mb-6">1:1 Coaching</h2>
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          Need personalized support to get started building your dream app or website, troubleshoot problems if you're
+          stuck, and continue learning the best way to work with AI code tools? We're here for you.
+        </p>
+      </div>
+
+      <div class="services-detail-grid">
+        <div style="margin-left: 2rem; max-width: 90%;">
+          <div class="space-y-6 mb-8">
+            <div>
+              <h4 class="font-medium text-foreground mb-2">Personalized Guidance</h4>
+              <p class="text-muted-foreground">Tailored coaching sessions based on your specific needs and goals</p>
+            </div>
+            <div>
+              <h4 class="font-medium text-foreground mb-2">Problem Solving</h4>
+              <p class="text-muted-foreground">Get unstuck with hands-on troubleshooting and debugging support</p>
+            </div>
+            <div>
+              <h4 class="font-medium text-foreground mb-2">Goal Achievement</h4>
+              <p class="text-muted-foreground">Stay on track with regular check-ins and milestone planning</p>
+            </div>
+          </div>
+
+          <button class="btn bg-primary text-primary-foreground hover:bg-primary/90">
+            <a href="/get-started">Book Welcome Session</a>
+          </button>
+        </div>
+
+        <div class="p-8 card">
+          <h3 class="text-xl font-medium text-foreground mb-6">What You'll Get</h3>
+          <ul class="service-features">
+            <li class="flex items-start text-muted-foreground">
+              <span>One-on-one video sessions</span>
+            </li>
+            <li class="flex items-start text-muted-foreground">
+              <span>Custom learning path</span>
+            </li>
+            <li class="flex items-start text-muted-foreground">
+              <span>Code review and feedback</span>
+            </li>
+            <li class="flex items-start text-muted-foreground">
+              <span>Resource recommendations</span>
+            </li>
+            <li class="flex items-start text-muted-foreground">
+              <span>Early access to new workshops</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Development section -->
+  <section class="services-detail">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-medium text-foreground mb-4">App Development Assistance</h2>
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          Want to just hurry up and get it done? We can take your AI-built work in progress and finish crafting it into
+          an app you can share with the world.
+        </p>
+      </div>
+
+      <div class="services-detail-grid">
+        <div class="p-8 card">
+          <h3 class="text-xl font-medium text-foreground mb-6">Our Tech Stack</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center p-4 border border-border rounded">
+              <h4 class="font-medium text-foreground text-sm">TypeScript</h4>
+              <p class="text-xs text-muted-foreground">Type-safe development</p>
+            </div>
+            <div class="text-center p-4 border border-border rounded">
+              <h4 class="font-medium text-foreground text-sm">React</h4>
+              <p class="text-xs text-muted-foreground">Modern UI components</p>
+            </div>
+            <div class="text-center p-4 border border-border rounded">
+              <h4 class="font-medium text-foreground text-sm">Next.js</h4>
+              <p class="text-xs text-muted-foreground">Full-stack framework</p>
+            </div>
+            <div class="text-center p-4 border border-border rounded">
+              <h4 class="font-medium text-foreground text-sm">AI Tools</h4>
+              <p class="text-xs text-muted-foreground">Enhanced development</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="space-y-6 mb-8">
+            <div>
+              <h4 class="font-medium text-foreground mb-2">Code Optimization</h4>
+              <p class="text-muted-foreground">Clean up and optimize your AI-generated code</p>
+            </div>
+            <div>
+              <h4 class="font-medium text-foreground mb-2">Feature Implementation</h4>
+              <p class="text-muted-foreground">Complete missing features and functionality</p>
+            </div>
+            <div>
+              <h4 class="font-medium text-foreground mb-2">Deployment Ready</h4>
+              <p class="text-muted-foreground">Prepare your app for production deployment</p>
+            </div>
+          </div>
+
+          <button class="btn bg-primary text-primary-foreground hover:bg-primary/90">
+            <a href="/get-started">Start Your Project</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
