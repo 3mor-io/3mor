@@ -1,38 +1,39 @@
 ---
 layout: default
-noparticles: true
 ---
 
-<div class="main">
-    <section class="module-small">
-      <div class="container-flex">
-        <div class="row row-15">
-          <div class="col-sm-8">
-            <div class="post">
-              <div class="post-thumbnail"><img src="{{ page.image }}" /></div>
-              <div class="post-header font-alt">
-                <h1 class="post-title">{{ page.title }}</h1>
-                <div class="post-meta">By&nbsp;<a href="#">{{ page.author }}</a> | {{ page.date | date: "%-d %B %Y" }}
-                </div>
-              </div>
-              <div class="post-entry">
-                {{ content }}
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
-            <div class="widget">
-              <h5 class="widget-title font-alt">Recent Posts</h5>
-              <ul class="widget-posts">
-                {% for post in site.posts %}
-                {% include post_snippet_widget.html thumb=post.thumb title=post.title date=post.date link=post.url %}
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="divider-d">
-    {% include footer.html %}
-</div>
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">{{ page.title }}</h1>
+    </div>
+  </section>
+
+  <section class="page-body">
+    <div class="post-image"><img src="{{ page.image }}" /></div>
+    <div class="post-meta">
+      posted {{ page.date | date: "%-d %B %Y" }} by {{ page.author }}
+    </div>
+    <article class="post-entry">
+      {{ content }}
+    </article>
+    </div>
+  </section>
+
+  <section class="post-footer">
+    {% if page.previous %}<a href="{{ page.previous.url }}">⬅&nbsp;&nbsp;Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;/{% endif
+    %}
+    {% if page.next %}/&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ page.next.url }}">Next&nbsp;&nbsp;➡</a>{% endif %}
+
+    <div class="workshop-subscribe pt-8">
+      <form action="https://buttondown.com/api/emails/embed-subscribe/3mor" method="post" target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/3mor?tag=workshop-interest', 'popupwindow')"
+        class="embeddable-buttondown-form">
+        <label for="bd-email">Stay up to date on all the latest resources from 3Mór</label>
+        <input type="email" name="email" id="bd-email" class="text-field" placeholder="Name" />
+        <input type="text" name="metadata__name" id="name" class="text-field" placeholder="Email" />
+        <input type="submit" value="Subscribe" class="btn btn-secondary" />
+      </form>
+    </div>
+  </section>
+</main>

@@ -17,5 +17,3 @@ After years of managers wondering if they have “the DevOps” because they bou
 3Mór is creating tooling that helps your team surface the complexity you are facing and make it actionable. We give you the map, project list, and a few starting points. We are doing the wildly boring work of helping you stair-step your way to a tidier stack. And for those complex bits, we surface the context you need to build more effectively and securely.
 
 We provide the conversation starter for Ops and Security to collaborate on how to address your [vulnerability hell](https://www.linkedin.com/posts/asadeddin_lets-talk-about-vulnerability-hell-and-activity-7217226704602169345-ySwj/). We bring visibility so that your Devs see where they fit into the whole without forcing them to be Ops or Security.
-
-Sign up for our newsletter [here](https://3mor.io/).

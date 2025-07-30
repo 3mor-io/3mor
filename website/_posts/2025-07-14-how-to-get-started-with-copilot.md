@@ -8,8 +8,6 @@ thumb: /assets/images/thumbs/vscode-copilot.jpg
 tags: ai copilot tooling tutorial vscode
 ---
 
-# How to get started with GitHub Copilot: Tips for experienced coders
-
 For years I’ve been writing everything from bash scripts to code fixes using my go-to editor: vi / vim. But I also find that an IDE like VSCode is great when I need to see the whole picture. Routine tasks don’t need extra help — but AI tools like GitHub Copilot and Gemini help me when I’m working in a new language or need a quick scaffold to build on. If you’re trying to figure out how to make use of AI in your everyday programming work, here’s where to start.
 
 ## What it’s good for

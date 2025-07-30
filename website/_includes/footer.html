@@ -1,57 +1,46 @@
-        <!--footer -->
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">About 3Mór</h5>
-                  <p>3Mór is AI-Powered Code Artifact Management for you and your team.</p>
-                  <p>Email: <a href="mailto:info@3mor.io">info@3mor.io</a></p>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Blog Categories</h5>
-                  <ul class="icon-list">
-                    <li><a href="{{ site.baseurl }}/tags/ai">AI</a></li>
-                    <li><a href="{{ site.baseurl }}/tags/devops">DevOps</a></li>
-                    <li><a href="{{ site.baseurl }}/tags/nextwave">Next Wave</a></li>
-                    <li><a href="{{ site.baseurl }}/tags/observability">Observability</a></li>
-                    <li><a href="{{ site.baseurl }}/tags/Security">Security</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Company</h5>
-                  <ul class="icon-list">
-                    <li><a href="{{ site.baseurl }}/privacy">Privacy Policy</a></li>
-                    <li><a href="{{ site.baseurl }}/tos">Terms of Service</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Follow Us</h5>
-                  <ul class="icon-list">
-                    <li><a href="https://www.linkedin.com/company/3mor/">LinkedIn</a></li>
-                    <li><a href="https://www.youtube.com/@3M%C3%B3r-io">YouTube</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Company Info -->
+      <div class="footer-company">
+        <div class="footer-logo">
+          {% include icon-bird.html %}
+          <span class="footer-logo-text">3Mór</span>
         </div>
-        <!-- Copyright -->
-        <hr class="divider-d">
-        <footer class="footer bg-dark">
-          <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p class="copyright font-alt">&copy; {{ site.time | date: "%Y" }}&nbsp;<a href="{{ site.url }}">3Mór</a>, All Rights Reserved</p>
-                </div>
-            </div>
-          </div>
-        </footer>
+        <p class="footer-description">
+          Named after the Mórrigan, the Celtic goddess of wisdom and transformation.
+          We guide your journey in discovering and mastering AI tools.
+        </p>
+        <a href="mailto:info@3mor.com" class="footer-email">
+          {% include icon-mail.html %}
+          <span>info@3mor.com</span>
+        </a>
       </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+
+      <!-- Services -->
+      <div class="footer-services">
+        <h3 class="footer-section-title">Services</h3>
+        <div class="footer-links">
+          <a href="/services#workshops" class="footer-link">Workshops</a>
+          <a href="/services#coaching" class="footer-link">Coaching</a>
+          <a href="/services#development" class="footer-link">Development</a>
+          <a href="/about" class="footer-link">About</a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <h3 class="footer-section-title">Follow us</h3>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/company/3mor/" class="footer-link">LinkedIn</a>
+          <a href="https://www.youtube.com/@3M%C3%B3r-io" class="footer-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; {{ site.time | date: "%Y" }}&nbsp;<a href="{{ site.url }}">3Mór</a>, All
+        Rights Reserved</p>
+    </div>
+  </div>
+</footer>

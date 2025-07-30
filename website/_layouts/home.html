@@ -1,267 +1,77 @@
 ---
 layout: default
-nav: navbar-transparent
 ---
-<section class="home-section bg-dark bg-gradient" id="home">
-  <div id="particles-js" class="titan-caption">
-    <div class="caption-content" style="z-index: 5;">
-      <div class="font-alt mb-40 titan-title-size-4">AI-Powered Code Artifact Management</div>
-      <div class="font-alt mb-30 titan-title-size-1">Identify and remediate orphaned, outdated, or risky artifacts in
-        your codebase with actionable AI-generated fixes. Maintain cleaner code and reduce technical debt.</div>
-      <div class="font-alt mb-80">&nbsp;</div>
 
-      <a class="section-scroll btn btn-border-w btn-round" href="https://portal.app.3mor.io/signup">Get Started for Free</a>
-    </div>
-  </div>
-</section>
-<div class="main">
-  <section class="module-extra-small bg-dark">
+<!-- Main Content -->
+<main>
+  <!-- Title Section -->
+  <section class="hero">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6">
-          <div class="callout-text font-alt">
-            <h4 style="margin-top: 0px; font-;">Sign up for Updates</h4>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-6">
-          <div class="callout-text font-alt">
-            <h4 style="margin-top: 0px; font-;">&nbsp;</h4>
-          </div>
-        </div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Unlock your <span class="text-accent">AI curiosity</span>
+        </h1>
+        <p class="hero-description">
+          Whether you're navigating AI tools for the first time or an experienced software engineer, 3Mór offers
+          consulting, workshops, and coaching to aid your journey.
+        </p>
       </div>
-      <div class="row">
-        <form id="subscription-form" role="form" method="post"
-          action="https://buttondown.com/api/emails/embed-subscribe/3mor">
-          <div class="col-sm-4 col-md-4 col-lg-5">
-            <div class="callout-text font-alt">
-              <div class="form-group">
-                <label class="sr-only" for="sname">Enter your name&nbsp;</label>
-                <input class="form-control" type="text" id="sname" name="sname" placeholder="Your Name*"
-                  required="required" data-validation-required-message="Please enter your name." />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-5">
-            <div class="callout-text font-alt">
-              <div class="form-group">
-                <label class="sr-only" for="semail">Enter your email&nbsp;</label>
-                <input class="form-control" type="email" id="semail" name="semail" placeholder="Your Email*"
-                  required="required" data-validation-required-message="Please enter your email address." />
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-2">
-            <div class="callout-text font-alt">
-              <span class="input-group-btn">
-                <button class="btn btn-g btn-round" id="subscription-form-submit" type="submit">Subscribe</button>
-              </span>
-            </div>
-          </div>
+
+      <div class="hero-actions">
+        <form action="https://buttondown.com/api/emails/embed-subscribe/3mor" method="post" target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/3mor', 'popupwindow')" class="embeddable-buttondown-form">
+          <label for="bd-email">Sign up to learn more</label>
+          <input type="email" name="email" id="bd-email" class="text-field" placeholder="Name" />
+          <input type="text" name="metadata__name" id="name" class="text-field" placeholder="Email" />
+          <input type="submit" value="Subscribe" class="btn btn-secondary" />
+          <p>
+            <a href="https://buttondown.com/refer/3mor" target="_blank">Powered by Buttondown.</a>
+          </p>
+        </form>
       </div>
-      <div class="text-center" id="subscription-response"></div>
-    </div>
   </section>
-  <!-- Features -->
-  <section class="module" id="features">
+
+  <!-- Services Preview -->
+  <section class="services-preview">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="module-title font-alt">Key Features</h2>
-          <div class="module-subtitle font-serif">Discover Strategic Observability for modern codebases. 3Mór finds
-            what's unused, unowned, or unsafe — and fixes it with a single prompt.</div>
-        </div>
-      </div>
-      <div class="row multi-columns-row post-columns">
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item">
-            <div class="alt-features-icon"><span class="fa fa-search"></span></div>
-            <h3 class="alt-feature-title font-alt">Smart Artifact Detection</h3>
-            <p>Our AI scans your codebase to identify orphaned, outdated, or risky code artifacts that could cause
-              issues.</p>
+      <h2 class="section-title">How We Help</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            {% include icon-users.html %}
           </div>
+          <h3 class="service-title">Workshops</h3>
+          <p class="service-description">
+            Learn prompting, tool selection, and how to transform ideas into reality.
+          </p>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item">
-            <div class="alt-features-icon"><span class="fa fa-robot"></span></div>
-            <h3 class="alt-feature-title font-alt">AI-Generated Fixes</h3>
-            <p>Get actionable, context-aware solutions for remediation, not just problem identification.</p>
+
+        <div class="service-card">
+          <div class="service-icon">
+            {% include icon-zap.html %}
           </div>
+          <h3 class="service-title">Coaching</h3>
+          <p class="service-description">
+            Personal guidance to build your vision, troubleshoot challenges, and develop mastery with AI development
+            tools.
+          </p>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item">
-            <div class="alt-features-icon"><span class="fa fa-chart-simple"></span></div>
-            <h3 class="alt-feature-title font-alt">Comprehensive Insights</h3>
-            <p>Visualize your code health with detailed metrics and prioritized recommendations.</p>
+
+        <div class="service-card">
+          <div class="service-icon">
+            {% include icon-braces.html %}
           </div>
-        </div>
-      </div>
-      <div class="row multi-columns-row post-columns">
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item">
-            <div class="alt-features-icon"><span class="fa fa-refresh"></span></div>
-            <h3 class="alt-feature-title font-alt">Seamless Integration</h3>
-            <p>Works with your existing CI/CD pipeline and development workflow with minimal setup.</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item">
-            <div class="alt-features-icon"><span class="fa fa-bolt"></span></div>
-            <h3 class="alt-feature-title font-alt">Performance Optimization</h3>
-            <p>Remove bloat and improve application performance by cleaning up unnecessary code.</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="alt-features-item">
-            <div class="alt-features-icon"><span class="fa fa-lock"></span></div>
-            <h3 class="alt-feature-title font-alt">Security Enhancement</h3>
-            <p>Identify potential security vulnerabilities in forgotten or outdated code artifacts.</p>
-          </div>
+          <h3 class="service-title">Development</h3>
+          <p class="service-description">
+            We can transform your AI-built prototype into a finished application that's ready to deploy.
+          </p>
         </div>
       </div>
     </div>
-  </section>
-  <hr class="divider-w pt-20">
-  <!-- How It Works -->
-  <section class="module" id="how-it-works">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="module-title font-alt">How It Works</h2>
-          <div class="module-subtitle font-serif">A simple process to cleaner, more maintainable code.</div>
-        </div>
-      </div>
-      <div class="row multi-columns-row post-columns">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="features-item">
-            <div class="features-icon"><span class="fa fa-1"></span></div>
-            <h3 class="features-title font-alt">Connect Your Repository</h3>
-            <p>Link your GitHub or GitLab repository with a few clicks.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="features-item">
-            <div class="features-icon"><span class="fa fa-2"></span></div>
-            <h3 class="feature-title font-alt">AI Analysis</h3>
-            <p>Our AI engine scans your codebase to identify problematic artifacts.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="features-item">
-            <div class="features-icon"><span class="fa fa-3"></span></div>
-            <h3 class="feature-title font-alt">Review Suggestions</h3>
-            <p>Examine AI-generated recommendations and fixes with clear explanations.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="features-item">
-            <div class="features-icon"><span class="fa fa-4"></span></div>
-            <h3 class="feature-title font-alt">Implement Solutions</h3>
-            <p>Apply fixes directly or export them to your development workflow.</p>
-          </div>
-        </div>
-      </div>
+
+    <div class="services-actions">
+      <a href="/services" class="btn btn-primary btn-lg">Explore Services</a>
+      <a href="/about" class="btn btn-secondary btn-lg">Learn More</a>
     </div>
   </section>
-  <hr class="divider-w pt-20">
-  <!-- Pricing Section -->
-  <section class="module" id="pricing">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="module-title font-alt">Simple, Transparent Pricing</h2>
-          <div class="module-subtitle font-serif">Choose a plan that fits your organization's needs.</div>
-        </div>
-      </div>
-      <div class="row multi-columns-row">
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="price-table">
-            <h4 class="font-alt">3 Month Trial</h4>
-            <p class="small font-alt">Try our platform without commitment</p>
-            <div class="borderline"></div>
-            <p class="price">Free</p>
-            <ul class="price-details">
-              <li>Up to 2 users</li>
-              <li>Basic artifact detection</li>
-              <li>Weekly scans</li>
-              <li>Email reports</li>
-              <li>Community support</li>
-            </ul><a class="btn btn-d btn-round" href="https://portal.app.3mor.io/signup">Sign Up</a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="price-table">
-            <h4 class="font-alt">Starter</h4>
-            <p class="small font-alt">~ $2,400/year</p>
-            <div class="borderline"></div>
-            <p class="price"><span>$</span>20<span>/user per month</span></p>
-            <ul class="price-details">
-              <li>Up to 10 users</li>
-              <li>1200 credits</li>
-              <li>Advanced artifact detection</li>
-              <li>AI-generated fix suggestions</li>
-              <li>Integration with CI/CD</li>
-              <li>Priority support</li>
-            </ul><a class="btn btn-d btn-round" href="https://portal.app.3mor.io/signup">Sign Up</a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="price-table best">
-            <h4 class="font-alt">Standard</h4>
-            <p class="small font-alt">~ $10K/year</p>
-            <div class="borderline"></div>
-            <p class="price"><span>$</span>834<span>/month</span></p>
-            <ul class="price-details">
-              <li>Up to 200 users</li>
-              <li>2000 pooled credits</li>
-              <li>Advanced artifact detection</li>
-              <li>Custom detection rules</li>
-              <li>Real-time scanning</li>
-              <li>Advanced security insights</li>
-              <li>API access</li>
-              <li>Dedicated support</li>
-            </ul><a class="btn btn-d btn-round" href="https://portal.app.3mor.io/signup">Sign Up</a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3">
-          <div class="price-table">
-            <h4 class="font-alt">Enterprise</h4>
-            <p class="small font-alt">For large organizations with complex needs</p>
-            <div class="borderline"></div>
-            <p class="price">Custom</p>
-            <ul class="price-details">
-              <li>Up to 200+ users</li>
-              <li>2000+ credits</li>
-              <li>Custom detection rules</li>
-              <li>Real-time scanning</li>
-              <li>Advanced security insights</li>
-              <li>API access</li>
-              <li>Dedicated support team</li>
-              <li>Custom integrations</li>
-              <li>SLA guarantees</li>
-            </ul><a class="btn btn-d btn-round" href="mailto:sales@3mor.io">Contact Sales</a>
-          </div>
-        </div>
-      </div>
-  </section>
-  <hr class="divider-w pt-20">
-  <!-- Blog -->
-  <section class="module" id="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="module-title font-alt">Latest blog posts</h2>
-          <div class="module-subtitle font-serif">&nbsp;</div>
-        </div>
-      </div>
-      <div class="row multi-columns-row post-columns">
-        {% for post in site.posts limit:3 %}
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          {% include post_snippet.html thumb=post.thumb title=post.title author=post.author date=post.date
-          excerpt=post.excerpt link=post.url %}
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  {% include footer.html %}
-</div>
+</main>

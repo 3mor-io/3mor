@@ -67,4 +67,4 @@ In a world of escalating complexity and risk, 3Mór isn't just another tool, it'
 
 **Your Transformation Starts Now**
 Don't just manage risk, prevent it. 3Mór turns your security challenges into a strategic advantage.
-Anticipate threats before they emerge. [Sign up for our beta](https://tally.so/r/nrrl2M) and transform how you manage security from reactive defense to predictive protection.
+<!-- Anticipate threats before they emerge. [Sign up for our beta](https://tally.so/r/nrrl2M) and transform how you manage security from reactive defense to predictive protection. -->

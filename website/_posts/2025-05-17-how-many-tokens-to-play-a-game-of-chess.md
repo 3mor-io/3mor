@@ -8,8 +8,6 @@ thumb: /assets/images/thumbs/chess.png
 tags: ai aiops devops security
 ---
 
-# How Many AI Tokens to Play a Game of Chess?
-
 > Just because AI tokens are cheap today doesn’t mean they’ll stay that way.
 
 When cloud adoption peaked around 2015, everyone migrated to “save money.” But many teams didn’t fully understand their on-prem costs, nor did they have a realistic plan for managing spend once they migrated. It’s as though we forgot about all our best practices.*  
@@ -93,11 +91,7 @@ Educate your teams. Create internal best practices. Monitor usage.
 
 Just like we learned in the cloud migration, **getting efficient early pays off in scale, security, and speed**.
 
----
-
-### ***🔗 Further Reading***
+## 🔗 Further Reading
 
 * [*AI Tokens Explained: Complete Guide to Usage, Optimization, & Cost Management*](https://guptadeepak.com/complete-guide-to-ai-tokens-understanding-optimization-and-cost-management/)  
-* [*OpenAI Tokenizer Tool*](https://platform.openai.com/tokenizer)
-
-If this helped, drop a 🐦‍⬛ in the comments or share your own best practice for managing AI usage at scale.
+* [OpenAI Tokenizer Tool](https://platform.openai.com/tokenizer)
