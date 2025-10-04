@@ -1,18 +1,104 @@
 # macOS
 .DS_Store
 
+# Visual Studio Code
+.vscode/
+.vsls.json
+
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Jekyll
-website/_site
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Other temp files
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# node-waf configuration
+.lock-wscript
+
+# TypeScript
+typings/
+*.tsbuildinfo
+next-env.d.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# dependencies
+node_modules
+node_modules.noindex
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# next.js / nuxt.js
+/.next/
+/.nuxt/
+
+# build output
+/build/
+/dist/
+/dist-types/
+/dist-workspace/
+/out/
+
+# Caches
+.cache/
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Ignore .firebase directories
+.firebase/
+
+# Ignore public/google*.html which is for site verification since this is dynamically copied in from config
+public/google*.html
+
+# credentials
+*.pem
+*-credentials.yaml
+*-credentials.json
+*firebase-config.json*
+*firebase-config*.json*
+gha-creds-*.json
+
+# misc
+*.local.yaml
+*.local.yml
+.env.local
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Binary and temp files
+*.tgz
 z-*
 z-*.*
+z.*
 *.tmp
 *.bak
 *.old
 *.new
-*.bak
+*.swp
+tmp/
+
