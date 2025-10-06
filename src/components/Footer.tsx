@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:w-1/2">
             <div className="flex items-center gap-3">
               <Sprout className="w-8 h-8 text-green-400" />
               <Home className="w-8 h-8 text-amber-400" />
@@ -31,27 +31,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Beta Signup Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Join Our Beta</h4>
-            <div className="space-y-3">
-              <a
-                id="signup-root-stem"
-                href="#"
-                className="block px-6 py-3 bg-green-600 hover:bg-green-500 rounded-lg font-semibold transition-colors text-center"
-              >
-                Sign Up for Root & Stem
-              </a>
-              <a
-                id="signup-foundation-frame"
-                href="#"
-                className="block px-6 py-3 bg-amber-600 hover:bg-amber-500 rounded-lg font-semibold transition-colors text-center"
-              >
-                Sign Up for Foundation & Frame
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
@@ -59,10 +38,10 @@ export default function Footer() {
           <p className="text-slate-400 text-sm">
             &copy; {new Date().getFullYear()} 3Mór. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 text-slate-400 text-sm">
+          <a href="mailto:info@3mor.io" className="flex items-center gap-2 text-slate-400 text-sm hover:text-white transition-colors">
             <Mail className="w-4 h-4" />
-            <span>Contact us for more information</span>
-          </div>
+            <span>info@3mor.io</span>
+          </a>
         </div>
       </div>
     </footer>

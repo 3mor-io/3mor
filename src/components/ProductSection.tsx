@@ -1,3 +1,4 @@
+
 import { Check, ChevronRight } from 'lucide-react';
 import { ReactNode } from 'react';
 
@@ -12,6 +13,9 @@ interface ProductSectionProps {
   ctaLink: string;
   theme: 'green' | 'amber';
   reverse?: boolean;
+  imageUrl?: string;
+  imageAlt?: string;
+  imageAttribution?: string;
 }
 
 export default function ProductSection({
@@ -24,7 +28,10 @@ export default function ProductSection({
   ctaText,
   ctaLink,
   theme,
-  reverse = false
+  reverse = false,
+  imageUrl,
+  imageAlt,
+  imageAttribution
 }: ProductSectionProps) {
   const themeColors = {
     green: {
@@ -97,15 +104,24 @@ export default function ProductSection({
 
           <div className={`${reverse ? 'md:order-1' : ''}`}>
             <div className="relative">
-              <div className="aspect-square bg-white rounded-3xl shadow-2xl p-8 flex items-center justify-center">
-                <div className={`text-center space-y-6 ${colors.iconColor}`}>
-                  <div className="transform scale-150">
-                    {icon}
-                  </div>
-                  <h3 className="text-3xl font-bold text-slate-900">{title}</h3>
-                  <p className="text-slate-600 text-lg">Coming Soon</p>
+              {imageUrl ? (
+                <div>
+                  <img src={imageUrl} alt={imageAlt} className="aspect-square object-cover rounded-3xl shadow-2xl" />
+                  {imageAttribution && (
+                    <p className="text-xs text-slate-500 mt-2 text-right">{imageAttribution}</p>
+                  )}
                 </div>
-              </div>
+              ) : (
+                <div className="aspect-square bg-white rounded-3xl shadow-2xl p-8 flex items-center justify-center">
+                  <div className={`text-center space-y-6 ${colors.iconColor}`}>
+                    <div className="transform scale-150">
+                      {icon}
+                    </div>
+                    <h3 className="text-3xl font-bold text-slate-900">{title}</h3>
+                    <p className="text-slate-600 text-lg">Coming Soon</p>
+                  </div>
+                </div>
+              )}
               {/* Decorative element */}
               <div className={`absolute -z-10 -bottom-8 -right-8 w-64 h-64 ${colors.iconBg} rounded-3xl opacity-50`}></div>
             </div>

@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Named after the Celtic goddess the Mórrigan, goddess of sovereignty
+        Climate resilience for your home and garden, inspired by the Celtic goddess the Mórrigan, goddess of sovereignty.
         </p>
 
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-12 leading-tight">
@@ -34,7 +34,7 @@ export default function Hero() {
         </h2>
 
         <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-16 leading-relaxed">
-          Being climate resilient is the best way forward. Our apps help you build confidence in the right home improvements or garden for your dwelling space.
+          Our apps help you build confidence in the right home improvements or garden for your dwelling space.
         </p>
 
         {/* CTA Buttons */}
