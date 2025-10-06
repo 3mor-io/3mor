@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import ProductSection from './components/ProductSection';
 import Footer from './components/Footer';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 function App() {
   return (
     <div className="min-h-screen bg-slate-50">
@@ -24,7 +26,7 @@ function App() {
         ctaText="Try Root & Stem"
         ctaLink="https://rootandstem.app/"
         theme="green"
-        imageUrl="/assets/zoe-richardson-basket.jpg"
+        imageUrl={BASE_URL + "assets/zoe-richardson-basket.jpg"}
         imageAlt="A basket of fresh vegetables"
         imageAttribution="Photo by Zoe Richardson on Unsplash"
       />
@@ -46,7 +48,7 @@ function App() {
         ctaLink="https://tally.so/r/mDjevR"
         theme="amber"
         reverse
-        imageUrl="/assets/tetiana-shyshkina-window.jpg"
+        imageUrl={BASE_URL + "assets/tetiana-shyshkina-window.jpg"}
         imageAlt="A cozy room with a window"
         imageAttribution="Photo by Tetiana SHYSHKINA on Unsplash"
       />
